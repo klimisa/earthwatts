@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{474B349D-9FC9-4F80-A1E2-30C55B9D8349}</ProjectGuid>
+    <ProjectGuid>{AA2FA337-C0F7-46F5-B3DC-78DAF6838434}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -86,9 +86,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\EartWattsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CreateProjectView.cs" />
+    <Compile Include="Models\LoginUserView.cs" />
+    <Compile Include="Models\RegisterUserView.cs" />
+    <Compile Include="Models\ResponseView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -102,8 +107,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EarthWatts.Domain\EarthWatts.Domain.csproj">
+      <Project>{581ff76c-608a-4c20-84c1-8f42ec37696a}</Project>
+      <Name>EarthWatts.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EarthWatts.Repository\EarthWatts.Repository.csproj">
+      <Project>{f97625e4-a2bb-44a2-9c51-64bc1e0e9d6e}</Project>
+      <Name>EarthWatts.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EarthWatts.Services\EarthWatts.Services.csproj">
+      <Project>{34FE9A6D-EF63-48DC-A4D9-5878F4F168F0}</Project>
+      <Name>EarthWatts.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -118,7 +135,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>56874</DevelopmentServerPort>
+          <DevelopmentServerPort>57705</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:56874/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

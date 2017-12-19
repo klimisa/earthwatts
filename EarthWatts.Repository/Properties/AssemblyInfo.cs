@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("EarthWatts.Api.UnitTest")]
+[assembly: AssemblyTitle("EarthWatts.Repository")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("EarthWatts.Api.UnitTest")]
+[assembly: AssemblyProduct("EarthWatts.Repository")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5cb92e85-27f1-420b-85ef-affe2a968405")]
+[assembly: Guid("f97625e4-a2bb-44a2-9c51-64bc1e0e9d6e")]
 
 // Version information for an assembly consists of the following four values:
 //
